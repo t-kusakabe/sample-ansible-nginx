@@ -1,0 +1,5 @@
+- hosts: webservers
+  tasks:
+  - name: "テスト"
+    shell: |
+      touch hoge
