@@ -1,0 +1,3 @@
+[submodule "sample-ec2-docker"]
+	path = sample-ec2-docker
+	url = git@github_pri:t-kusakabe/sample-ec2-docker.git
