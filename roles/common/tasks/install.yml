@@ -1,0 +1,13 @@
+---
+- name: Update yum
+  yum:
+    name: '*'
+    state: latest
+  tags: common
+
+- name: Install yum packages
+  yum:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  with_items: "{{ yum_install }}"
+  tags: common

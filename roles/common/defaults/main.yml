@@ -1,0 +1,6 @@
+---
+yum_install:
+  - {
+    name: "openssl-devel",
+    state: "latest"
+  }
