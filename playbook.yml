@@ -1,5 +1,6 @@
+---
 - hosts: webservers
-  tasks:
-  - name: "テスト"
-    shell: |
-      touch hoge
+  become: yes
+  roles:
+    - common
+    - nginx
